@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<style>
+	body {
+		padding: 25px;
+		background-color: white;
+		color: black;
+		font-size: 25px;
+	}
+	.dark-mode {
+		background-color: black;
+		color: white;
+	}
+	.light-mode {
+		background-color: white;
+		color: black;
+	}
+	</style>
+</head>
+<body>
+	<h3 id="DarkModetext">Dark Mode is OFF</h3>
+	<button onclick="darkMode()">Darkmode</button>
+	<button onclick="lightMode()">LightMode</button>
+	<script>
+	function darkMode() {
+		var element = document.body;
+		var content = document.getElementById("DarkModetext");
+		element.className = "dark-mode";
+		content.innerText = "Dark Mode --> ON";
+	}
+	function lightMode() {
+		var element = document.body;
+		var content = document.getElementById("DarkModetext");
+		element.className = "light-mode";
+		content.innerText = "Dark Mode --> OFF";
+	}
+	</script>
+</body>
+</html>
+<hr size="3" width="50%" align="center" color="red">
+<html>
+    <head>
+        <title>Calcolatrice HTML</title>
+    </head>
+
+    <body bgcolor="#000000" text="gold">
+        <form name="calculator">
+            <center>
+                <input type="textfield" name="ans" value="">
+                <table>
+                    <tr>
+                        <td><input type="button" value="1" onClick="document.calculator.ans.value+='1'"></td>
+                        <td><input type="button" value="2" onClick="document.calculator.ans.value+='2'"></td>
+                        <td><input type="button" value="3" onClick="document.calculator.ans.value+='3'"></td>
+                        <td><input style="background-color: rgb(255, 0, 0);" type="reset" value="Canc"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4"onClick="document.calculator.ans.value+='4'"></td>
+                        <td><input type="button" value="5"onClick="document.calculator.ans.value+='5'"></td>
+                        <td><input type="button" value="6"onClick="document.calculator.ans.value+='6'"></td>
+                        <td><input type="button" value="+"onClick="document.calculator.ans.value+='+'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7"onClick="document.calculator.ans.value+='7'"></td>
+                        <td><input type="button" value="8"onClick="document.calculator.ans.value+='8'"></td>
+                        <td><input type="button" value="9"onClick="document.calculator.ans.value+='9'"></td>
+                        <td><input type="button" value="-"onClick="document.calculator.ans.value+='-'"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="/"onClick="document.calculator.ans.value+='/'"></td>
+                        <td><input type="button" value="0"onClick="document.calculator.ans.value+='0'"></td>
+                        <td><input type="button" value="*"onClick="document.calculator.ans.value+='*'"></td>
+                        <td><input style="background-color: rgb(255, 0, 0);" type="button" value="="onClick="document.calculator.ans.value=eval(document.calculator.ans.value)"></td>
+                    </tr>
+                </table>
+            </center>
+        </form>
+    </body>
+</html>
